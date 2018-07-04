@@ -19,11 +19,11 @@ module.exports = (function makeWebpackConfig () {
   }
   config.output = isTest ? {} : {
     // Absolute output directory
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'docs'),
 
     // Output path from the view of the page
     // Uses webpack-dev-server in development
-    publicPath: '/',
+    publicPath: '',
 
     // Filename for entry points
     // Only adds hash in build mode
