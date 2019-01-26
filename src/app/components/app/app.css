@@ -1,0 +1,9 @@
+html,
+body {
+  height: 100%;
+  background-color: rgba(46, 130, 167, 0.5);
+}
+
+.container {
+  max-width: 46rem;
+}
