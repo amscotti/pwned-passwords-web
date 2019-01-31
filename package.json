@@ -15,8 +15,7 @@
   },
   "homepage": "https://128bit.io",
   "dependencies": {
-    "angular": "^1.7.0",
-    "js-sha1": "^0.6.0"
+    "angular": "^1.7.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -44,9 +43,14 @@
     }
   },
   "lint-staged": {
-    "*.{js,json,css,md,html}": [
-      "prettier --write",
-      "git add"
+    "linters": {
+      "*.{js,json,css,md,html}": [
+        "prettier --write",
+        "git add"
+      ]
+    },
+    "ignore": [
+      "**/docs/*"
     ]
   }
 }

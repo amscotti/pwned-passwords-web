@@ -1,5 +1,4 @@
 var HtmlWebpackPlugin = require("html-webpack-plugin");
-var path = require("path");
 
 module.exports = {
   mode: "development",
@@ -28,7 +27,10 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        loader: "html-loader"
+        loader: "html-loader",
+        options: {
+          minimize: true
+        }
       }
     ]
   },
